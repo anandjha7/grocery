@@ -28,7 +28,7 @@ html{
 }
 
 body{
-    background: #eee;
+    background: #fee1ec;
 }
 
 section{
@@ -303,7 +303,7 @@ section{
 }
 
 .location h3{
-    color:#ff7800;
+    color:rgb(19, 17, 20);
     font-size: 5rem;
 }
 
