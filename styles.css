@@ -262,7 +262,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(back.jpg) no-repeat;
+    background: url("back.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
@@ -290,7 +290,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(lo.jpg) no-repeat;
+    background: url("lo.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
