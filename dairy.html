@@ -1,19 +1,252 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dairy products</title>
-    <link rel="icon" type="image/x-icon" href="dairy.jpg" >
+    <title>fruits</title>
+    <link rel="icon" type="image/x-icon" href="fruits.jpg" >
 
     <link rel="stylesheet" href="styles.css">
     <style>
-       
+       .catalog .catalogs-slider{
+            padding: 1rem;
+        }
+
+        .catalog .catalogs-slider:first-child{
+            margin-bottom: 2rem;
+        }
+
+        .catalog .catalogs-slider .box{
+            background:#eee;
+            display: grid;
+            grid: 150px / auto auto auto;
+            border-radius: .5rem;
+            text-align: center;
+            padding: 3rem 2rem;
+            outline-offset: -1rem;
+            outline: var(--outline);
+            box-shadow: var(--box-shadow);
+            transition: .2s linear;
+        }
+
+        .catalog .catalogs-slider .box:hover{
+            outline-offset: 0rem;
+            outline: var(--outline-hover);
+            background-color:skyblue;
+        }
+
+        .catalog .catalogs-slider .box img{
+            height: 20rem;
+        }
+
+        .catalog .catalogs-slider .box h3{
+            font-size: 2.5rem;
+            color:var(--black);
+        }
+
+        .catalog .catalogs-slider .box h3 span{
+            font-size: 2.5rem;
+            color:red;
+        }
+
+        .catalog .catalogs-slider .box .price{
+            font-size: 2rem;
+            color:var(--light-color);
+            padding: .5rem;
+        }
+
+        .catalog .catalogs-slider .box .stars i{
+            font-size: 1.7rem;
+            color:var(--orange);
+            padding: .5rem 0;
+        }
     </style>
+    
     
 </head>
 <body>
-   <h1>no products available right now</h1>
+    <section class="catalog" id="catalog">
+        <h1 class="heading"> <span>dairy products</span> </h1>
+
+        <div class="swiper catalogs-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="butter.jpeg" alt="">
+                    <h3>fresh butter</h3>
+                    <div class="price">  20 USD/kg </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="cheese.jpeg" alt="">
+                    <h3>fresh cheese</h3>
+                    <div class="price">  27 USD/kg </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="cottage cheese.jpeg" alt="">
+                    <h3>fresh cottage cheese</h3>
+                    <div class="price"> 19 USD/kg </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="yogurt.jpeg" alt="">
+                    <h3>fresh yogurt</h3>
+                    <div class="price"> 35 USD/kg </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="curd.jpeg" alt="">
+                    <h3>fresh curd</h3>
+                    <div class="price"> 45 USD/kg </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="milk.jpg" alt="">
+                    <h3>fresh milk <br> "cow milk & buffalo milk  are available"</h3>
+                    <div class="price"> 35 USD/lit </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="ghee.jpeg" alt="">
+                    <h3>fresh ghee</h3>
+                    <div class="price"> 87 USD/kg </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="wip.jpeg" alt="">
+                    <h3>whipped cream</h3>
+                    <div class="price"> 49 USD/kg </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="hot c.jpeg" alt="">
+                    <h3>hot chocolate <br><br> <span>"out of stock"</span></h3>
+                    <div class="price"> 13.5 USD/glass </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="cus.jpeg" alt="">
+                    <h3> fresh custard</h3>
+                    <div class="price"> 27 USD/cup </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="sour cream.jpeg" alt="">
+                    <h3>fresh sour cream</h3>
+                    <div class="price"> 55 USD/kg </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="pow.jpeg" alt="">
+                    <h3>powdered milk</h3>
+                    <div class="price"> 50 USD/pac </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="marg.jpeg" alt="">
+                    <h3>margrine</h3>
+                    <div class="price"> 50 USD/kg </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn"> add to cart </a>
+                </div>
+                
+               
+               
+               
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>

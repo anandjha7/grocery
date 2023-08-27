@@ -8,12 +8,59 @@
 
     <link rel="stylesheet" href="styles.css">
     <style>
-       
+       .catalog .catalogs-slider{
+            padding: 1rem;
+        }
+
+        .catalog .catalogs-slider:first-child{
+            margin-bottom: 2rem;
+        }
+
+        .catalog .catalogs-slider .box{
+            background:#eee;
+            display: grid;
+            grid: 150px / auto auto auto;
+            border-radius: .5rem;
+            text-align: center;
+            padding: 3rem 2rem;
+            outline-offset: -1rem;
+            outline: var(--outline);
+            box-shadow: var(--box-shadow);
+            transition: .2s linear;
+        }
+
+        .catalog .catalogs-slider .box:hover{
+            outline-offset: 0rem;
+            outline: var(--outline-hover);
+            background-color:skyblue;
+        }
+
+        .catalog .catalogs-slider .box img{
+            height: 20rem;
+        }
+
+        .catalog .catalogs-slider .box h3{
+            font-size: 2.5rem;
+            color:var(--black);
+        }
+
+        .catalog .catalogs-slider .box .price{
+            font-size: 2rem;
+            color:var(--light-color);
+            padding: .5rem;
+        }
+
+        .catalog .catalogs-slider .box .stars i{
+            font-size: 1.7rem;
+            color:var(--orange);
+            padding: .5rem 0;
+        }
     </style>
+    
     
 </head>
 <body>
-    <section class="catalogs" id="catalogs">
+    <section class="catalog" id="catalog">
         <h1 class="heading"> <span>fresh fruits</span> </h1>
 
         <div class="swiper catalogs-slider">
